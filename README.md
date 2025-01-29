@@ -1,4 +1,4 @@
-![GitCleanse](banner.jpeg)
+![GitCleanse](banner.jpg)
 
 # GitCleanse Enhanced GitHub Follower Manager
 
