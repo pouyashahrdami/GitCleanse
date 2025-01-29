@@ -22,6 +22,17 @@ This is the most powerful command-line tool designed to help you manage and grow
 -   **GitHub API:** Uses the official GitHub API to interact with your profile.
 -   **Rich Console:** Utilizes the `rich` library for beautiful and interactive console output.
 
+## Demos
+![GitCleanse_demo1](demo1.png)
+-
+![GitCleanse_demo2](demo2.png)
+-
+![GitCleanse_demo3](demo3.png)
+-
+![GitCleanse_demo3](demo4.png)
+-
+and more... just give a try and you will love it :)
+
 ## Prerequisites
 
 Before using the application, ensure you have:
