@@ -1,0 +1,3 @@
+rich
+requests
+python-dotenv

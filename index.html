@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitCleanse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            position: relative;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 50px auto;
+            background-color: #27293d;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+         h1 {
+            font-size: 3em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+           
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #bbb;
+            margin-top: 50px;
+            border-bottom: 2px solid #393b4e;
+            padding-bottom: 10px;
+             text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        }
+
+        .features-list {
+          list-style: none;
+          padding: 0;
+        }
+         .features-list li {
+             margin-bottom: 20px;
+            padding: 25px;
+            background-color: #393b4e;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .features-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+           
+        }
+         .features-list li strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 8px;
+         }
+        .code-snippet {
+            background-color: #393b4e;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 30px 0;
+            font-family: 'Consolas', monospace;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+          .code-snippet pre {
+          margin: 0;
+          white-space: pre-wrap; /* make the code wrap */
+           font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .installation-steps, .menu-options {
+            margin-bottom: 40px;
+        }
+        .menu-options ul {
+          list-style: disc;
+          margin-left: 20px;
+        }
+        .menu-options li {
+            margin-bottom: 15px;
+        }
+
+        .button {
+          display: inline-block;
+          padding: 15px 30px;
+          text-decoration: none;
+          border-radius: 8px;
+          background-color: #64b5f6;
+          color: #fff;
+          text-align: center;
+           transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background-color: #42a5f5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+         p {
+           font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+         footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+            color: #666;
+            background-color: #1a1a2e;
+            position: relative;
+            z-index: 10;
+        }
+      footer::before {
+            content: '';
+             position: absolute;
+             top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1a1a2e 100%);
+             z-index: -1;
+        }
+
+        /* Background pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(80,80,120,0.1) 10%, transparent 10%), radial-gradient(circle, rgba(50,50,100,0.08) 20%, transparent 20%);
+            background-size: 60px 60px;
+            z-index: 0;
+        }
+
+          /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+               width: 95%;
+               padding: 30px;
+            }
+            h1 {
+              font-size: 2.5em;
+            }
+            h2 {
+               font-size: 1.8em;
+               margin-top: 40px;
+            }
+              .features-list li {
+                  padding: 18px;
+                   margin-bottom: 15px;
+            }
+          .code-snippet {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitCleanse</h1>
+        <p style="text-align:center">
+           A powerful command-line tool to manage and grow your GitHub network.
+        </p>
+
+        <h2>Features</h2>
+        <ul class="features-list">
+            <li><strong>Relationship Analysis:</strong> Analyze your followers, following, and mutual relationships.</li>
+            <li><strong>Unfollow Non-Followers:</strong> Unfollow users who are not following you back.</li>
+            <li><strong>Follow Back Followers:</strong> Follow back users who are following you but you're not following back.</li>
+            <li><strong>Discover New Connections:</strong> Discover and follow the followers of your followers.</li>
+            <li><strong>User Activity Analysis:</strong> Analyze user profiles and activity, including repository details, stars, and last push.</li>
+            <li><strong>User Filtering:</strong> Filter users based on criteria like follower count or repository count.</li>
+             <li><strong>User Scoring:</strong> Score users based on their activity and contributions.</li>
+            <li><strong>Network Language Analysis:</strong> Analyze the most used languages in your network's repositories.</li>
+             <li><strong>Customizable Dashboard:</strong> Display a dashboard of key network metrics, top users, and language stats.</li>
+            <li><strong>Automated User Engagement:</strong> Automatically star new repositories, like new commits, comment on issues and pull requests, and follow back users that follow you.</li>
+            <li><strong>GitHub API:</strong> Uses the official GitHub API to interact with your profile.</li>
+            <li><strong>Rich Console:</strong> Utilizes the `rich` library for beautiful and interactive console output.</li>
+        </ul>
+
+        <h2>Prerequisites</h2>
+        <p>
+            Before using the application, ensure you have:
+        </p>
+        <ul>
+          <li>Python 3.8 or higher
+            </li>
+             <li>A GitHub Personal Access Token with the `repo` or `public_repo` scope.
+                </li>
+        </ul>
+
+        <h2>Installation</h2>
+        <div class="installation-steps">
+            <p>
+                Clone the repository:
+            </p>
+            <div class="code-snippet">
+                <pre><code>git clone https://github.com/your-username/your-repository.git
+cd your-repository
+                </code></pre>
+            </div>
+             <p>
+                Install dependencies:
+            </p>
+            <div class="code-snippet">
+                <pre><code>pip install -r requirements.txt</code></pre>
+            </div>
+        </div>
+
+        <h2>Usage</h2>
+        <p>
+          Set your GitHub token as an environment variable named `GITHUB_TOKEN`. If the environment variable is not set, the application will prompt you to enter your token at the start.
+         </p>
+           <p>Run the application:</p>
+          <div class="code-snippet">
+            <pre><code>python main.py</code></pre>
+        </div>
+         <p>Follow the on-screen menu to perform a specific task.
+         </p>
+
+        <h2>Menu Options</h2>
+        <div class="menu-options">
+          <ul>
+            <li><strong>1:</strong> Analyze current relationships (mutual followers, non-followers, etc.).</li>
+            <li><strong>2:</strong> Unfollow non-followers (users who don't follow you back).</li>
+            <li><strong>3:</strong> Follow back your followers (users who follow you but you don't follow back).</li>
+            <li><strong>4:</strong> Discover and follow followers' followers (with a user-defined limit).</li>
+            <li><strong>5:</strong> Analyze user activity (show details about user contributions).</li>
+            <li><strong>6:</strong> Display detailed user information (about the current user).</li>
+            <li><strong>7:</strong> Generate network report (not yet implemented).</li>
+             <li><strong>8:</strong> Display user dashboard (key metrics and insights).</li>
+              <li><strong>9:</strong> Automated User Engagement (configure and perform automated actions).</li>
+            <li><strong>q:</strong> Exit the application.</li>
+          </ul>
+       </div>
+
+        <h2>Automated User Engagement Details</h2>
+        <p>The Automated User Engagement feature allows you to configure the following actions:</p>
+        <ul>
+            <li><strong>Star New Repositories:</strong> Automatically star new repositories created by users in your network.</li>
+            <li><strong>Like New Commits:</strong> Automatically like (add +1 reaction to) new commits made by users in your network.</li>
+            <li><strong>Comment on Issues/PRs:</strong> Automatically comment on newly opened issues or pull requests in your network using a customizable message.</li>
+            <li><strong>Follow Back Users:</strong> Automatically follow back users in your network that you're not following.</li>
+            <li><strong>Rate Limiting:</strong> All actions respect GitHub's rate limits with sleeps between API requests.</li>
+        </ul>
+       <a href="https://github.com/pouyashahrdami/GitCleanse" class="button">View on GitHub</a>
+    </div>
+
+    <footer>
+        © 2025 Pouya Shahrdami. All rights reserved.
+    </footer>
+</body>
+</html>

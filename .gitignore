@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+develop-eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.log
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.sqlite3
+*.sqlite
+*.db
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+environment/
+instance/
+
+# OS or Editor related
+.DS_Store
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Python-specific stuff
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+
+# Project specific
+github_unfollow_report_*.txt
