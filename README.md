@@ -1,4 +1,4 @@
-![GitCleanse](banner.jpg)
+![GitCleanse](https://github.com/pouyashahrdami/GitCleanse/raw/main/banner.jpg)
 
 # GitCleanse Enhanced GitHub Follower Manager
 
@@ -23,13 +23,13 @@ This is the most powerful command-line tool designed to help you manage and grow
 -   **Rich Console:** Utilizes the `rich` library for beautiful and interactive console output.
 
 ## Demos
-![GitCleanse_demo1](demo1.png)
+![GitCleanse_demo1](https://github.com/pouyashahrdami/GitCleanse/raw/main/demo1.png)
 -
-![GitCleanse_demo2](demo2.png)
+![GitCleanse_demo2](https://github.com/pouyashahrdami/GitCleanse/raw/main/demo2.png)
 -
-![GitCleanse_demo3](demo3.png)
+![GitCleanse_demo3](https://github.com/pouyashahrdami/GitCleanse/raw/main/demo3.png)
 -
-![GitCleanse_demo3](demo4.png)
+![GitCleanse_demo3](https://github.com/pouyashahrdami/GitCleanse/raw/main/demo4.png)
 -
 and more... just give a try and you will love it :)
 

@@ -62,6 +62,6 @@ instance/
 *.pyo
 *.pyd
 *.pyi
-
 # Project specific
 github_unfollow_report_*.txt
+setup.py
